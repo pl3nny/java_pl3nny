@@ -1,0 +1,399 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gma",
+				"gameVersion"
+			],
+			[
+				"player",
+				"playerCount"
+			],
+			[
+				"to",
+				"to_str"
+			],
+			[
+				"rand",
+				"randArray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/javatar/game/Main.java",
+			"settings":
+			{
+				"buffer_size": 159,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "package javatar.game;\n\npublic class Player \n{\n    private String name;\n    private double money;\n    private int chips;\n}\n",
+			"file": "src/javatar/game/Player.java",
+			"file_size": 59,
+			"file_write_time": 131800455713938622,
+			"settings":
+			{
+				"buffer_size": 122,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "package javatar.game;\n\npublic class Roulette \n{\n\tprivate String gameVersion;\n    private int numOfPlayers;\n\n    Roulette(){};\n    \n    Roulette(String gameVersion, int numOfPlayers)\n    {\n    \tthis.gameVersion = gameVersion;\n    \tthis.numOfPlayers = numOfPlayers;\n    }\n}\n",
+			"file": "src/javatar/game/Roulette.java",
+			"file_size": 59,
+			"file_write_time": 131800457572339378,
+			"settings":
+			{
+				"buffer_size": 272,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"syntax ja",
+				"Set Syntax: Java"
+			],
+			[
+				"syntax pro",
+				"Set Syntax: SWI-Prolog"
+			],
+			[
+				"synt",
+				"Set Syntax: C++"
+			],
+			[
+				"synta",
+				"Set Syntax: C++"
+			],
+			[
+				"syntax",
+				"Set Syntax: C++"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/game"
+	],
+	"file_history":
+	[
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/game/Main.java",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/simple/roulette/player.java",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/simple/roulette/roulette.java",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/simple/roulette/javatar/simple/roulette/player.java",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/roulette.java",
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/roulette.java",
+		"/C/Users/pl3nny/Google Drive/CSUEB/CS 3120/Homeworks/hw7/hw7.pl",
+		"/C/Users/pl3nny/Google Drive/SFSU/SF STATE/SFSU Spring 2018/CSC 600/CSC600 HW/600hw3/hwProlog2.pl",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/solar system/solarSystem.h",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/solar system/solarSystem.cpp",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/solar system/main.cpp",
+		"/C/Users/pl3nny/Google Drive/CSUEB/CS 3120/Homeworks/Hw4/lexicalAnalyzer.cpp",
+		"/C/Users/pl3nny/Google Drive/CSUEB/CS 3120/Homeworks/Hw4/test.txt",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/file io/fileInOut.cpp",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/sorting algorithms/bubbleSort.cpp",
+		"/C/Users/pl3nny/Documents/gitProjects/cpp/cpp_pl3nny/sorting algorithms/insertionSort.cpp",
+		"/C/Users/pl3nny/NTUSER.DAT",
+		"/C/Users/pl3nny/Desktop/html-test/index.html",
+		"/C/Users/pl3nny/Desktop/html-test/style.css",
+		"/C/Users/pl3nny/Desktop/html-test/modal.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/javatar/game/Main.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/javatar/game/Player.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/javatar/game/Roulette.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.396885964912,
+			0.662192982456,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 195.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "rouletteGame.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
