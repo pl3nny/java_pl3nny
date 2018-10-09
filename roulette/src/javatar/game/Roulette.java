@@ -111,7 +111,24 @@ public class Roulette
     	}
     	else if(gameVersion.equals("100B"))
     	{
-    		return houseChips;
+    		int selection;
+    		double moneyToChips = 0;
+
+    		switch(selection)
+    		{
+    			case 5:
+    				break;
+    			case 20:
+    				break;
+    			case 100;
+    				break;
+    			case 200;
+    				break;
+    			case 300;
+    				break;
+    				break;
+    				
+    		}
     	}
     	else
     	{
