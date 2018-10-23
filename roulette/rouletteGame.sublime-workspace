@@ -27,42 +27,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/javatar/game/Main.java",
-			"settings":
-			{
-				"buffer_size": 159,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/javatar/game/Player.java",
-			"settings":
-			{
-				"buffer_size": 653,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/javatar/game/Roulette.java",
-			"settings":
-			{
-				"buffer_size": 2495,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/javatar/game/UI.java",
-			"settings":
-			{
-				"buffer_size": 171,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -144,13 +108,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette",
-		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src",
-		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar",
-		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/game"
+		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette"
 	],
 	"file_history":
 	[
+		"/D/Users/pl3nny/Documents/gitProjects/java/java_pl3nny/roulette/src/javatar/game/Roulette.java",
+		"/D/Users/pl3nny/Documents/gitProjects/java/java_pl3nny/roulette/src/javatar/game/Player.java",
+		"/D/Users/pl3nny/Documents/gitProjects/java/java_pl3nny/roulette/src/javatar/game/Main.java",
 		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/game/Main.java",
 		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/simple/roulette/player.java",
 		"/C/Users/pl3nny/Documents/gitProjects/java_pl3nny/roulette/src/javatar/simple/roulette/roulette.java",
@@ -205,121 +169,13 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/javatar/game/Main.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 159,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								159,
-								159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/javatar/game/Player.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 653,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								645,
-								645
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/javatar/game/Roulette.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2495,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2444,
-								2444
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/javatar/game/UI.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -340,11 +196,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -403,7 +266,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 189.0,
 	"status_bar_visible": true,
 	"template_settings":
