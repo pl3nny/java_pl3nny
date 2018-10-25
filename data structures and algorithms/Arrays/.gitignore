@@ -1,6 +1,0 @@
-#ignoring folders
-/.idea
-/out
-
-#ignoring Files
-*.iml
