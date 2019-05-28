@@ -15,6 +15,14 @@ public class Main
         * For you specific type of vehicle you want to add something specific for that ype of car
         */
 
-        System.out.println("Smoke Tires Not Drugs");
+        DodgeCharger alexScatPack = new DodgeCharger();
+
+        alexScatPack.setScatPack(true);
+        System.out.println();
+        System.out.println("engine: 6.4L Hemi v" + alexScatPack.getEngine());
+        System.out.println("top speed: " + alexScatPack.getSpeed() + " MPH");
+        //alexScatPack.setEngineStart(true);
+        alexScatPack.wakeNeighbors();
+        alexScatPack.doBurnOut();
     }
 }
