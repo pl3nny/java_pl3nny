@@ -12,17 +12,13 @@ public class Main
         * You should be able to hand steer, change gears, move(speed)
         * You will want to decide where to put the appropriate state and behaviours (fields and methods)
         * As mentioned above, changing gears, increasing/decreasing speed should be included
-        * For you specific type of vehicle you want to add something specific for that ype of car
+        * For you specific type of vehicle you want to add something specific for that type of car
         */
 
-        DodgeCharger alexScatPack = new DodgeCharger();
+        DodgeCharger alexsScatPack = new DodgeCharger("white", 8, true);
 
-        alexScatPack.setScatPack(true);
-        System.out.println();
-        System.out.println("engine: 6.4L Hemi v" + alexScatPack.getEngine());
-        System.out.println("top speed: " + alexScatPack.getSpeed() + " MPH");
-        //alexScatPack.setEngineStart(true);
-        alexScatPack.wakeNeighbors();
-        alexScatPack.doBurnOut();
+        System.out.println(alexsScatPack.getName());
+        alexsScatPack.doBurnout();
+
     }
 }

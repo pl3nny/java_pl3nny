@@ -3,12 +3,29 @@ package com.inheritanceChallenge;
 public class Car extends Vehicle
 {
     private int doors;
-    private int wheels = 4;
-    private String color;
+    private int wheels;
+    private int valves;
+    private int speed;
+    private boolean isStopped = true;
+    private boolean isMoving = false;
 
-    public void setDoors(int doors){this.doors = doors;}
-    public int getDoors(){return doors;}
-    public int getWheels(){return wheels;}
-    public void setColor(String color){this.color = color;}
-    public String getColor(){return color;}
+    public Car(String name, String color, int door, int valves)
+    {
+        super(name, color);
+        this.doors = doors;
+        this.wheels = 4;
+        this.valves = valves;
+        this.speed = 0;
+    }
+
+    public void stop()
+    {
+        speed = 0;
+        isStopped = true;
+        isMoving = false;
+    }
+
+    public boolean isStopped(){return isStopped;}
+    public boolean isMoving(){return isMoving;}
+
 }

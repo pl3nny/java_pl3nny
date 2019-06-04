@@ -2,50 +2,59 @@ package com.inheritanceChallenge;
 
 public class DodgeCharger extends Car
 {
+    private boolean engineStart = false;
     private boolean isScatPack = false;
     private boolean rearWheelDrive = false;
     private boolean allWheelDrive = false;
 
-    public DodgeCharger()
+    public DodgeCharger(String color, int valves, boolean isScatPack)
     {
+        super("Charger", color, 4, valves);
         System.out.println("Loading Dodge Charger...");
-        setDoors(4);
-    }
 
-    public void setScatPack(boolean isScatPack)
-    {
-        if(isScatPack)
+        if (isScatPack)
         {
-            setEngine(8);
-            this.isScatPack = isScatPack;
             rearWheelDrive = true;
-            setSpeed(168);
+            setName("Dodge Charger Scat Pack");
         }
     }
 
-    public boolean isScatPack(){return isScatPack;}
-
-    public void doBurnOut()
+    public void startEngine(boolean engineStart)
     {
-        System.out.println("Alex says...");
-        System.out.println("\"Smoke Tires Not Drugs\"...while burning out");
+        this.engineStart = engineStart;
     }
 
-    public void wakeNeighbors()
+    public boolean isEngineStart()
     {
-        if(!isEngineStart())
+        return engineStart;
+    }
+
+    public boolean isScatPack()
+    {
+        return isScatPack;
+    }
+
+    public boolean isRearWheelDrive()
+    {
+        return rearWheelDrive;
+    }
+
+    public boolean isAllWheelDrive()
+    {
+        return allWheelDrive;
+    }
+
+    public void doBurnout()
+    {
+        if(isEngineStart())
         {
-            setEngineStart(true);
-            System.out.println("starting your beast of a car...");
-            System.out.println("Now waking up your neighbors");
+            System.out.println("Alex's says \"Smoke Tires Not Drugs\" while burning out");
         }
         else
         {
-            System.out.println("Your beast of car is already on fam");
+            System.out.println("starting engine and waking up neighbors");
+            startEngine(true);
+            doBurnout();
         }
     }
-
-    public boolean isRearWheelDrive(){return rearWheelDrive;}
-    public boolean isAllWheelDrive(){return allWheelDrive;}
-
 }

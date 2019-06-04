@@ -2,14 +2,17 @@ package com.inheritanceChallenge;
 
 public class Vehicle
 {
-    private boolean engineStart = false;
-    private int engine;
-    private int speed;
+    private String name;
+    private String color;
 
-    public void setEngineStart(boolean engineStart){this.engineStart = engineStart;}
-    public boolean isEngineStart(){return engineStart;}
-    public void setEngine(int engine){this.engine = engine;}
-    public int getEngine(){return engine;}
-    public void setSpeed(int speed){this.speed = speed;}
-    public int getSpeed(){return speed;}
+    public Vehicle(String name, String color)
+    {
+        this.name = name;
+        this.color = color;
+    }
+
+    public void setName(String name){this.name = name;}
+    public void setColor(String color){this.color = color;}
+    public String getName(){return name;}
+    public String getColor(){return color;}
 }
