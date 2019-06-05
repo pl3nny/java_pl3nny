@@ -2,29 +2,27 @@ package composition.com.pl3nny;
 
 public class PC
 {
-    private Case theCase;
+    private Case compCase;
     private Monitor monitor;
     private Motherboard motherboard;
 
-    public PC(Case theCase, Monitor monitor, Motherboard motherboard)
+    public PC(Case compCase, Monitor monitor, Motherboard motherboard)
     {
-        this.theCase = theCase;
+        this.compCase = compCase;
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase()
+    public void powerUp()
     {
-        return theCase;
+        compCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Monitor getMonitor()
+    private void drawLogo()
     {
-        return monitor;
-    }
-
-    public Motherboard getMotherboard()
-    {
-        return motherboard;
+        //start up logo
+        monitor.drawPixelAt(1200, 50, "yellow");
+        System.out.println("start up logo");
     }
 }
