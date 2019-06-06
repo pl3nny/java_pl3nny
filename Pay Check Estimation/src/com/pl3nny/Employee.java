@@ -9,6 +9,9 @@ public class Employee extends People
     private String dentalGroup;
     private String visionGroup;
     private int hoursWorked;
+    private int overTimeHours;
+
+    private boolean workedOvertime = false;
 
     public Employee(String name, int age, String companyName, double hrPayRate, int hoursWorked, double benefitDental, double benefitVision, String dentalGroup, String visionGroup)
     {
@@ -55,5 +58,25 @@ public class Employee extends People
     public int getHoursWorked()
     {
         return hoursWorked;
+    }
+
+    public int getOverTimeHours()
+    {
+        return overTimeHours;
+    }
+
+    public void setOverTimeHours(int overTimeHours)
+    {
+        this.overTimeHours = overTimeHours;
+    }
+
+    public boolean isWorkedOvertime()
+    {
+        if(overTimeHours > 0)
+        {
+            workedOvertime = true;
+        }
+
+        return workedOvertime;
     }
 }

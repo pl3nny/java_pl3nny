@@ -9,12 +9,14 @@ public class PayCheck
     private double afterTax;
     private double taxedAmount;
     private double benefitsDeductions;
+    private double overtimePay;
 
     public PayCheck(Employee employee, CaliforniaTax californiaTax, FederalTax federalTax)
     {
         this.employee = employee;
         this.californiaTax = californiaTax;
         this.federalTax = federalTax;
+        this.overtimePay = 0;
     }
 
     private double sumOfTax()
@@ -37,7 +39,7 @@ public class PayCheck
 
     public double checkBeforeTaxes()
     {
-        beforeTax = employee.getHrPayRate() * employee.getHoursWorked();
+        beforeTax = employee.getHrPayRate() * employee.getHoursWorked() + getOvertimePay();
 
         return roundAmount(beforeTax);
     }
@@ -46,11 +48,24 @@ public class PayCheck
     {
         afterTax = beforeTax - taxedAmount();
 
-        return afterTax;
+        return roundAmount(afterTax);
     }
 
     public double roundAmount(double amount)
     {
         return (double)Math.round(amount * 100) / 100;
+    }
+
+    public double getOvertimePay()
+    {
+        if(employee.isWorkedOvertime())
+        {
+            overtimePay = employee.getHrPayRate() * employee.getOverTimeHours() * 1.5;
+
+            return roundAmount(overtimePay);
+        }else
+        {
+            return 0;
+        }
     }
 }

@@ -1,4 +1,5 @@
 package com.pl3nny;
+import java.util.Scanner;
 
 public class Main
 {
@@ -6,6 +7,8 @@ public class Main
     public static void main(String[] args)
     {
 	// write your code here
+        Scanner scan = new Scanner(System.in);
+
         System.out.println("Author: Alexander Hernandez\n");
         System.out.println("\tPay Check Estimation\n");
 
@@ -18,6 +21,8 @@ public class Main
 
         PayCheck check = new PayCheck(pl3nny, caTax, fedTax);
 
+        int overtime;
+
         System.out.println("Company Name: " + pl3nny.getCompanyName());
         System.out.println("Employee: " + pl3nny.getName());
         System.out.println("Pay Rate: $" + pl3nny.getHrPayRate());
@@ -28,7 +33,15 @@ public class Main
         System.out.println("Benefits Deductions: $" + check.benefitsDeductinos());
         System.out.println();
 
+        System.out.print("Enter Overtime hours -> ");
+        overtime = scan.nextInt();
+
+        pl3nny.setOverTimeHours(overtime);
+
+        System.out.println("Worked " + pl3nny.getOverTimeHours() + " hours of overtime");
+        System.out.println("Overtime: $" + check.getOvertimePay());
         System.out.println("Before Taxes: $" + check.checkBeforeTaxes());
-        System.out.println("After Taxes and Benefits Deductions: $" + check.roundAmount(check.checkAfterTaxes() - check.benefitsDeductinos()));
+        System.out.println("After Taxes and Benefits Deductions: $" +
+                check.roundAmount(check.checkAfterTaxes() - check.benefitsDeductinos()));
     }
 }
