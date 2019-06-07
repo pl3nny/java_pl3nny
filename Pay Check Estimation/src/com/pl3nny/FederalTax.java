@@ -2,20 +2,20 @@ package com.pl3nny;
 
 public class FederalTax
 {
-    private double fedIncome;
-    private double socialSecurity;
+    private double fedWithholding;
+    private double socialSecurity; // Federal OASDI/EE
     private double medicare;
 
-    public FederalTax(double fedIncome, double socialSecurity, double medicare)
+    public FederalTax(double fedWithholding, double socialSecurity, double medicare)
     {
-        this.fedIncome = fedIncome / 100;
+        this.fedWithholding = fedWithholding / 100;
         this.socialSecurity = socialSecurity / 100;
         this.medicare = medicare / 100;
     }
 
-    public double getFedIncome()
+    public double getFedWithholding()
     {
-        return fedIncome;
+        return fedWithholding;
     }
 
     public double getSocialSecurity()

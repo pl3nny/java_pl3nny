@@ -2,13 +2,13 @@ package com.pl3nny;
 
 public class CaliforniaTax
 {
-    private double stateDisabilityTax;
-    private double stateIncome;
+    private double stateDisabilityTax; // CA OASDI/EE
+    private double caWithholding;
 
-    public CaliforniaTax(double stateDisabilityTax, double stateIncome)
+    public CaliforniaTax(double stateDisabilityTax, double caWithholding)
     {
         this.stateDisabilityTax = stateDisabilityTax / 100;
-        this.stateIncome = stateIncome / 100;
+        this.caWithholding = caWithholding / 100;
     }
 
     public double getStateDisabilityTax()
@@ -16,8 +16,8 @@ public class CaliforniaTax
         return stateDisabilityTax;
     }
 
-    public double getStateIncome()
+    public double getCaWithholding()
     {
-        return stateIncome;
+        return caWithholding;
     }
 }

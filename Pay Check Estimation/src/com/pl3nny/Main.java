@@ -43,5 +43,7 @@ public class Main
         System.out.println("Before Taxes: $" + check.checkBeforeTaxes());
         System.out.println("After Taxes and Benefits Deductions: $" +
                 check.roundAmount(check.checkAfterTaxes() - check.benefitsDeductinos()));
+
+        System.out.println();
     }
 }

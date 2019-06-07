@@ -21,8 +21,8 @@ public class PayCheck
 
     private double sumOfTax()
     {
-        return californiaTax.getStateIncome() + californiaTax.getStateDisabilityTax()
-                + federalTax.getSocialSecurity() + federalTax.getMedicare() + federalTax.getFedIncome();
+        return californiaTax.getCaWithholding() + californiaTax.getStateDisabilityTax()
+                + federalTax.getSocialSecurity() + federalTax.getMedicare() + federalTax.getFedWithholding();
     }
 
     public double taxedAmount()

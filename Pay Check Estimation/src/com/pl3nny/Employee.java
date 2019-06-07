@@ -13,7 +13,9 @@ public class Employee extends People
 
     private boolean workedOvertime = false;
 
-    public Employee(String name, int age, String companyName, double hrPayRate, int hoursWorked, double benefitDental, double benefitVision, String dentalGroup, String visionGroup)
+    public Employee(String name, int age, String companyName, double hrPayRate,
+                    int hoursWorked, double benefitDental, double benefitVision,
+                    String dentalGroup, String visionGroup)
     {
         super(name, age);
         this.companyName = companyName;
