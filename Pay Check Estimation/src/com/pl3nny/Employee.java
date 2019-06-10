@@ -8,13 +8,14 @@ public class Employee extends People
     private double benefitVision;
     private String dentalGroup;
     private String visionGroup;
-    private int hoursWorked;
-    private int overTimeHours;
+    private double hoursWorked;
+    private double overTimeHours;
+    private double yearlyIncome;
 
     private boolean workedOvertime = false;
 
     public Employee(String name, int age, String companyName, double hrPayRate,
-                    int hoursWorked, double benefitDental, double benefitVision,
+                    double hoursWorked, double benefitDental, double benefitVision,
                     String dentalGroup, String visionGroup)
     {
         super(name, age);
@@ -57,12 +58,12 @@ public class Employee extends People
         return visionGroup;
     }
 
-    public int getHoursWorked()
+    public double getHoursWorked()
     {
         return hoursWorked;
     }
 
-    public int getOverTimeHours()
+    public double getOverTimeHours()
     {
         return overTimeHours;
     }
@@ -80,5 +81,12 @@ public class Employee extends People
         }
 
         return workedOvertime;
+    }
+
+    public double yearlyIncome()
+    {
+        yearlyIncome = ((hrPayRate * hoursWorked) / 2 ) * 52;
+
+        return (double)Math.round(yearlyIncome);
     }
 }

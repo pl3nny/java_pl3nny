@@ -8,6 +8,7 @@ public class PayCheck
     private double beforeTax;
     private double afterTax;
     private double taxedAmount;
+    private double OTtaxedAmount;
     private double benefitsDeductions;
     private double overtimePay;
 
@@ -17,6 +18,7 @@ public class PayCheck
         this.californiaTax = californiaTax;
         this.federalTax = federalTax;
         this.overtimePay = 0;
+        this.OTtaxedAmount = 0;
     }
 
     private double sumOfTax()
@@ -25,9 +27,15 @@ public class PayCheck
                 + federalTax.getSocialSecurity() + federalTax.getMedicare() + federalTax.getFedWithholding();
     }
 
+    private double sumOfOTtax()
+    {
+        return sumOfTax() - californiaTax.getCaWithholding() - federalTax.getFedWithholding() + federalTax.getOTfedWithholding()
+                + californiaTax.getOTcaWithholding();
+    }
+
     public double taxedAmount()
     {
-        taxedAmount = (checkBeforeTaxes() - benefitsDeductinos()) * sumOfTax();
+        taxedAmount = checkBeforeTaxes() * sumOfTax();
         return roundAmount(taxedAmount);
     }
 
@@ -46,26 +54,32 @@ public class PayCheck
 
     public double checkAfterTaxes()
     {
-        afterTax = beforeTax - taxedAmount();
+        afterTax = beforeTax - (taxedAmount + OTtaxedAmount);
 
         return roundAmount(afterTax);
     }
 
     public double roundAmount(double amount)
     {
-        return (double)Math.round(amount * 100) / 100;
+        return (double)Math.round(amount * 100.0) / 100.0;
     }
 
     public double getOvertimePay()
     {
         if(employee.isWorkedOvertime())
         {
-            overtimePay = employee.getHrPayRate() * employee.getOverTimeHours() * 1.5;
-
+            overtimePay = employee.getHrPayRate() * 1.5 * employee.getOverTimeHours();
             return roundAmount(overtimePay);
         }else
         {
-            return 0;
+            return 0.00;
         }
+    }
+
+    public double getOTtaxedAmount()
+    {
+        OTtaxedAmount = getOvertimePay() * sumOfOTtax();
+
+        return roundAmount(OTtaxedAmount);
     }
 }
