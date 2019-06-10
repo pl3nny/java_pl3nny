@@ -12,25 +12,26 @@ public class Main
         System.out.println("Author: Alexander Hernandez\n");
         System.out.println("\tPay Check Estimation\n");
 
-        System.out.print("Enter current pay rate: $");
+        double overtime, hoursWorked, payRate;
 
-        Employee pl3nny = new Employee("Alexander Hernandez",28,"Artech",
-                scan.nextDouble(),80,25.99,3.20,"Metlife Dental",
-                "VSP");
+        System.out.print("Enter current pay rate: $");
+        payRate = scan.nextDouble();
+        System.out.print("Enter hours regular hours worked: ");
+        hoursWorked = scan.nextDouble();
+        System.out.print("Enter Over Time hours worked: ");
+        overtime = scan.nextDouble();
+        System.out.println();
+
+        Employee pl3nny = new Employee("Alexander Hernandez",28,"Artech", payRate,hoursWorked,
+                25.99,3.20,"Metlife Dental","VSP");
         FederalTax federalTax = new FederalTax();
         CaliforniaTax californiaTax = new CaliforniaTax();
-
         PayCheck check = new PayCheck(pl3nny, californiaTax, federalTax);
-
-
-        int overtime;
 
         System.out.println("Company Name: " + pl3nny.getCompanyName());
         System.out.println("Employee: " + pl3nny.getName());
         System.out.println("Pay Rate: $" + pl3nny.getHrPayRate());
         System.out.println("Yearly income before Taxes: $" + pl3nny.yearlyIncome());
-        System.out.print("Overtime Hours: ");
-        overtime = scan.nextInt();
         pl3nny.setOverTimeHours(overtime);
         System.out.println();
 

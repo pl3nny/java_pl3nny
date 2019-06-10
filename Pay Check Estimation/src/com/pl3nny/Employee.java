@@ -68,7 +68,7 @@ public class Employee extends People
         return overTimeHours;
     }
 
-    public void setOverTimeHours(int overTimeHours)
+    public void setOverTimeHours(double overTimeHours)
     {
         this.overTimeHours = overTimeHours;
     }
