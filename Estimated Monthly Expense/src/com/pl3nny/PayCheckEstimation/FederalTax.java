@@ -1,4 +1,4 @@
-package com.pl3nny;
+package com.pl3nny.PayCheckEstimation;
 
 public class FederalTax
 {

@@ -1,4 +1,4 @@
-package com.pl3nny;
+package com.pl3nny.PayCheckEstimation;
 import java.util.Scanner;
 
 public class Main
