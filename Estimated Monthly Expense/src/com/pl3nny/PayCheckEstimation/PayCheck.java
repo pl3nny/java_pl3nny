@@ -12,6 +12,13 @@ public class PayCheck
     private double benefitsDeductions;
     private double overtimePay;
 
+    public PayCheck()
+    {
+        californiaTax = new CaliforniaTax();
+        federalTax = new FederalTax();
+        employee = new Employee();
+    }
+
     public PayCheck(Employee employee, CaliforniaTax californiaTax, FederalTax federalTax)
     {
         this.employee = employee;
@@ -81,5 +88,20 @@ public class PayCheck
         OTtaxedAmount = getOvertimePay() * sumOfOTtax();
 
         return roundAmount(OTtaxedAmount);
+    }
+
+    public Employee getEmployee()
+    {
+        return employee;
+    }
+
+    public CaliforniaTax getCaliforniaTax()
+    {
+        return californiaTax;
+    }
+
+    public FederalTax getFederalTax()
+    {
+        return federalTax;
     }
 }
