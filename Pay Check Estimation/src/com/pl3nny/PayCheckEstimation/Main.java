@@ -11,43 +11,48 @@ public class Main
         System.out.println("Author: Alexander Hernandez\n");
         System.out.println("\tPay Check Estimation\n");
 
-        int age;
-        double overtime, hoursWorked, payRate, dentalSubscription = 0, visionSubscription = 0, medicalSubscription = 0;
-        String name, companyName, medicalInsName = "",dentalInsName = "", visionIsnName = "", answer;
+        int age = 28;
+        double overtime, hoursWorked, payRate = 29.44, dentalSubscription = 25.99, visionSubscription = 3.20, medicalSubscription = 0;
+        String name = "Alex", companyName="Artech", medicalInsName = "N/A",dentalInsName = "MedLife", visionIsnName = "VSP", answer;
 
-        System.out.print("Employee Name: ");
-        name = scan.next();
-        System.out.print("Employee Age: ");
-        age = scan.nextInt();
-        System.out.print("Company Name: ");
-        companyName = scan.next();
-        System.out.print("Enter current pay rate: $");
-        payRate = scan.nextDouble();
-        System.out.print("Enter hours regular hours worked: ");
-        hoursWorked = scan.nextDouble();
-        System.out.print("Enter Over Time hours worked: ");
-        overtime = scan.nextDouble();
+//        System.out.print("Employee Name: ");
+//        name = scan.next();
+//        System.out.print("Employee Age: ");
+//        age = scan.nextInt();
+//        System.out.print("Company Name: ");
+//        companyName = scan.next();
+//        System.out.print("Enter current pay rate: $");
+//        payRate = scan.nextDouble();
+//        System.out.print("Enter hours regular hours worked: ");
+//        hoursWorked = scan.nextDouble();
+//        System.out.print("Enter Over Time hours worked: ");
+//        overtime = scan.nextDouble();
+//        System.out.println();
+//
+//        System.out.print("Are you currently insured with with Medical, dental, or vision? (y or yes): ");
+//        answer = scan.next();
+//        if(answer.equals("y") || answer.equals("yes"))
+//        {
+//            System.out.println("type \"N/A\" if not applicable... ");
+//            System.out.print("Medical Insurer: ");
+//            medicalInsName = scan.next();
+//            System.out.print(medicalInsName + " monthly payment: ");
+//            medicalSubscription = scan.nextDouble();
+//            System.out.print("Dental Insurer: ");
+//            dentalInsName = scan.next();
+//            System.out.print(dentalInsName + " monthly payment: ");
+//            dentalSubscription = scan.nextDouble();
+//            System.out.print("Vision Insurer: ");
+//            visionIsnName = scan.next();
+//            System.out.print(visionIsnName + " monthly payment: ");
+//            visionSubscription = scan.nextDouble();
+//        }
         System.out.println();
 
-        System.out.print("Are you currently insured with with Medical, dental, or vision? (y or yes): ");
-        answer = scan.next();
-        if(answer.equals("y") || answer.equals("yes"))
-        {
-            System.out.println("type \"N/A\" if not applicable... ");
-            System.out.print("Medical Insurer: ");
-            medicalInsName = scan.next();
-            System.out.print(medicalInsName + " monthly payment: ");
-            medicalSubscription = scan.nextDouble();
-            System.out.print("Dental Insurer: ");
-            dentalInsName = scan.next();
-            System.out.print(dentalInsName + " monthly payment: ");
-            dentalSubscription = scan.nextDouble();
-            System.out.print("Vision Insurer: ");
-            visionIsnName = scan.next();
-            System.out.print(visionIsnName + " monthly payment: ");
-            visionSubscription = scan.nextDouble();
-        }
-        System.out.println();
+        System.out.print("Enter Hours worked: ");
+        hoursWorked = scan.nextInt();
+        System.out.print("Overtime hours worked: ");
+        overtime = scan.nextInt();
 
         Employee employee = new Employee(name,age,companyName, payRate,hoursWorked,
                 dentalSubscription,visionSubscription,dentalInsName,visionIsnName);
