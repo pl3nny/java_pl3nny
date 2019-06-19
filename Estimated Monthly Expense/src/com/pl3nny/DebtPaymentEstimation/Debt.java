@@ -36,6 +36,7 @@ public class Debt extends APR
 
     public double getInterest()
     {
+        calcInterest();
         return interest;
     }
 
