@@ -14,11 +14,20 @@ public class Main
         players[0] = new Players(100);
         players[1] = new Players(500, 1234, "John");
 
+
+//        System.out.println(players[0].getPlayer().getCash());
+//        System.out.println(players[1].getVipPlayer().getName() + " ID: " + players[1].getVipPlayer().getId());
+
         for (int i = 0; i < players.length; i++)
         {
-            System.out.println();
-            System.out.println("Cash: $" + players[i].getPlayer().getCash());
+            if(players[i].isVip())
+            {
+                System.out.println(players[1].getVipPlayer().getName() + " ID: " + players[1].getVipPlayer().getId());
+            }
+            else
+            {
+                System.out.println(players[0].getPlayer().getCash());
+            }
         }
-
     }
 }

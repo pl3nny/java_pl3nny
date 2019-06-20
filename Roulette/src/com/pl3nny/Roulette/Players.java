@@ -1,6 +1,6 @@
 package com.pl3nny.Roulette;
 
-public class Players extends Player
+public class Players
 {
     private Player player;
     private Vip vipPlayer;
@@ -8,14 +8,13 @@ public class Players extends Player
 
     public Players(int cash)
     {
-        super(cash);
+        player = new Player(cash);
     }
 
     public Players(int cash, int id, String name)
     {
-        super(cash);
-        this.vipPlayer.setId(id);
-        this.vipPlayer.setName(name);
+        setVip(true);
+        vipPlayer = new Vip(cash, id, name);
     }
 
     public Player getPlayer()
@@ -45,6 +44,6 @@ public class Players extends Player
 
     public void setVip(boolean vip)
     {
-        isVip = vip;
+        this.isVip = vip;
     }
 }
