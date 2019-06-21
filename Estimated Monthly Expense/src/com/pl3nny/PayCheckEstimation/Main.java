@@ -12,8 +12,8 @@ public class Main
         System.out.println("\tPay Check Estimation\n");
 
         int age;
-        double overtime, hoursWorked, payRate, dentalSubscription = 0, visionSubscription = 0, medicalSubscription = 0;
-        String name, companyName, medicalInsName = "",dentalInsName = "", visionIsnName = "", answer;
+        double overtime, hoursWorked, payRate, dentalSubscription = 25.99, visionSubscription = 3.20, medicalSubscription = 0;
+        String name, companyName = "", medicalInsName = "N/A",dentalInsName = "MedLife", visionIsnName = "VSP", answer;
 
         System.out.print("Employee Name: ");
         name = scan.next();
@@ -29,24 +29,24 @@ public class Main
         overtime = scan.nextDouble();
         System.out.println();
 
-        System.out.print("Are you currently insured with with Medical, dental, or vision? (y or yes): ");
-        answer = scan.next();
-        if(answer.equals("y") || answer.equals("yes"))
-        {
-            System.out.println("type \"N/A\" if not applicable... ");
-            System.out.print("Medical Insurer: ");
-            medicalInsName = scan.next();
-            System.out.print(medicalInsName + " monthly payment: ");
-            medicalSubscription = scan.nextDouble();
-            System.out.print("Dental Insurer: ");
-            dentalInsName = scan.next();
-            System.out.print(dentalInsName + " monthly payment: ");
-            dentalSubscription = scan.nextDouble();
-            System.out.print("Vision Insurer: ");
-            visionIsnName = scan.next();
-            System.out.print(visionIsnName + " monthly payment: ");
-            visionSubscription = scan.nextDouble();
-        }
+//        System.out.print("Are you currently insured with with Medical, dental, or vision? (y or yes): ");
+//        answer = scan.next();
+//        if(answer.equals("y") || answer.equals("yes"))
+//        {
+//            System.out.println("type \"N/A\" if not applicable... ");
+//            System.out.print("Medical Insurer: ");
+//            medicalInsName = scan.next();
+//            System.out.print(medicalInsName + " monthly payment: ");
+//            medicalSubscription = scan.nextDouble();
+//            System.out.print("Dental Insurer: ");
+//            dentalInsName = scan.next();
+//            System.out.print(dentalInsName + " monthly payment: ");
+//            dentalSubscription = scan.nextDouble();
+//            System.out.print("Vision Insurer: ");
+//            visionIsnName = scan.next();
+//            System.out.print(visionIsnName + " monthly payment: ");
+//            visionSubscription = scan.nextDouble();
+//        }
         System.out.println();
 
         Employee employee = new Employee(name,age,companyName, payRate,hoursWorked,
