@@ -1,8 +1,13 @@
 package com.pl3nny.Roulette;
 
+import java.util.Arrays;
+
 public class Roulette extends Game
 {
     private int houseChips;
+    private String color;
+    private int betNumber;
+
 
     public Roulette(int numOfPlayers, int houseChips)
     {
@@ -64,4 +69,32 @@ public class Roulette extends Game
         }
     }
 
+    public void spinWheel()
+    {
+
+    }
+
+    public int getHouseChips() {
+        return houseChips;
+    }
+
+    public void setHouseChips(int houseChips) {
+        this.houseChips = houseChips;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getBetNumber() {
+        return betNumber;
+    }
+
+    public void setBetNumber(int betNumber) {
+        this.betNumber = betNumber;
+    }
 }
