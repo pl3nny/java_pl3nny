@@ -17,16 +17,19 @@ public class Main {
         apr = scan.nextDouble();
         System.out.println();
 
-        Debt myDebt = new Debt((debt - 500.00), apr);
+        Debt myDebt = new Debt((debt), apr);
 
         System.out.println("Debt: $" + myDebt.getDebtAmount() + " APR: " + (myDebt.getApr()*100) + "%");
         System.out.println();
-        System.out.println("Interest Charge for $" + myDebt.getDebtAmount() + " is $" + myDebt.getInterest());
         System.out.print("Enter estimated monthly payments: $");
         payment = scan.nextDouble();
 
-        while(myDebt.getDebtAmount() > 0)
+        while(myDebt.getDebtAmount() > 0 || months == 12)
         {
+            if(months == 1)
+            {
+                System.out.println("Interest Charge for $" + myDebt.getDebtAmount() + " is $" + myDebt.getInterest());
+            }
             if(months == 5)
             {
                 System.out.println();

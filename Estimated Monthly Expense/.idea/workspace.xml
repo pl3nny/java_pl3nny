@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07d42178-223b-4b8b-ad1f-1a6179b1274b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estimated Monthly Expense/com/pl3nny/DebtPaymentEstimation/Debt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estimated Monthly Expense/com/pl3nny/DebtPaymentEstimation/Debt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estimated Monthly Expense/com/pl3nny/DebtPaymentEstimation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estimated Monthly Expense/com/pl3nny/DebtPaymentEstimation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Debt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Debt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +22,7 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/MonthlyExpense/MyFinances.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="638">
+                  <state relative-caret-position="580">
                     <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
                     <folding>
                       <element signature="imports" expanded="true" />
@@ -38,7 +34,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/PayCheck.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="550">
+                  <state relative-caret-position="500">
                     <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
                   </state>
                 </provider>
@@ -47,7 +43,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Employee.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1826">
+                  <state relative-caret-position="1660">
                     <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
                   </state>
                 </provider>
@@ -64,7 +60,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/MonthlyExpense/Main.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="330">
+                  <state relative-caret-position="300">
                     <caret line="15" selection-start-line="15" selection-end-line="15" />
                   </state>
                 </provider>
@@ -73,7 +69,7 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Debt.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="572">
+                  <state relative-caret-position="520">
                     <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
                   </state>
                 </provider>
@@ -82,7 +78,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/APR.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="44">
+                  <state relative-caret-position="40">
                     <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                   </state>
                 </provider>
@@ -98,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="60">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -107,7 +103,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
+            <state relative-caret-position="176">
               <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
@@ -148,11 +144,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="217" />
-    <option name="y" value="175" />
-    <option name="width" value="2036" />
-    <option name="height" value="1483" />
+    <option name="y" value="134" />
+    <option name="width" value="1372" />
+    <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -162,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +201,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -272,17 +268,18 @@
       <workItem from="1561124486035" duration="1261000" />
       <workItem from="1561261970318" duration="496000" />
       <workItem from="1561347935161" duration="322000" />
+      <workItem from="1561986814436" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9945000" />
+    <option name="totallyTimeSpent" value="10019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="33" width="1577" height="1016" extended-state="6" />
+    <frame x="217" y="134" width="1372" height="846" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15931533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23018293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -329,30 +326,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/MonthlyExpense/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/APR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Debt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="60">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/MonthlyExpense/MyFinances.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="580">
           <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -362,28 +345,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/PayCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="500">
           <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1826">
+        <state relative-caret-position="1660">
           <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/MonthlyExpense/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/APR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Debt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/DebtPaymentEstimation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="176">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
