@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af5b317f-1720-441f-a18b-171c4eecf710" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Roulette/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Roulette/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pay Check Estimation/META-INF/Pay Check Estimation.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pay Check Estimation/com/pl3nny/PayCheckEstimation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pay Check Estimation/com/pl3nny/PayCheckEstimation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +19,32 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/People.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="40">
+                    <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Employee.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="255">
+                    <caret line="15" selection-start-line="15" selection-end-line="15" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
     <window id="2">
       <content type="file-editors">
         <state>
@@ -22,7 +52,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/FederalTax.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="544">
+                  <state relative-caret-position="460">
                     <caret line="32" selection-start-line="32" selection-end-line="32" />
                   </state>
                 </provider>
@@ -50,40 +80,14 @@
         </state>
       </content>
     </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/People.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="34">
-                    <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Employee.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="255">
-                    <caret line="15" selection-start-line="15" selection-end-line="15" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="236">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -122,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="129" />
+    <option name="x" value="263" />
+    <option name="y" value="176" />
     <option name="width" value="1260" />
     <option name="height" value="771" />
   </component>
@@ -157,8 +161,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,17 +227,19 @@
       <workItem from="1560438223228" duration="95000" />
       <workItem from="1560608976015" duration="1734000" />
       <workItem from="1561037339823" duration="637000" />
+      <workItem from="1561986184457" duration="142000" />
+      <workItem from="1561986368717" duration="387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29264000" />
+    <option name="totallyTimeSpent" value="29793000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="129" width="1260" height="771" extended-state="0" />
+    <frame x="263" y="176" width="1260" height="771" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23234811" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -242,7 +248,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" x="232" y="367" width="836" height="478" id="Run" order="2" type="WINDOWED" weight="0.3284974" />
+      <window_info anchor="bottom" x="534" y="421" width="836" height="478" id="Run" order="2" type="WINDOWED" weight="0.3284974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,7 +277,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/FederalTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="460">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
@@ -292,7 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/People.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="40">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
@@ -306,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/PayCheckEstimation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="236">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>

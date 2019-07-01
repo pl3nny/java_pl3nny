@@ -11,23 +11,27 @@ public class Main
         System.out.println("Author: Alexander Hernandez\n");
         System.out.println("\tPay Check Estimation\n");
 
-        int age = 28;
-        double overtime, hoursWorked, payRate = 29.44, dentalSubscription = 25.99, visionSubscription = 3.20, medicalSubscription = 0;
-        String name = "Alex", companyName="Artech", medicalInsName = "N/A",dentalInsName = "MedLife", visionIsnName = "VSP", answer;
+        int age;
+        double overtime, hoursWorked, payRate, dentalSubscription, visionSubscription, medicalSubscription;
+        String name = "name", companyName="employer", medicalInsName = "medical",dentalInsName = "dental", visionIsnName = "vision", answer;
 
-//        System.out.print("Employee Name: ");
-//        name = scan.next();
-//        System.out.print("Employee Age: ");
-//        age = scan.nextInt();
+        System.out.print("Employee Name: ");
+        name = scan.next();
+        System.out.print("Employee Age: ");
+        age = scan.nextInt();
 //        System.out.print("Company Name: ");
 //        companyName = scan.next();
-//        System.out.print("Enter current pay rate: $");
-//        payRate = scan.nextDouble();
-//        System.out.print("Enter hours regular hours worked: ");
-//        hoursWorked = scan.nextDouble();
-//        System.out.print("Enter Over Time hours worked: ");
-//        overtime = scan.nextDouble();
-//        System.out.println();
+        System.out.print("Enter current pay rate: $");
+        payRate = scan.nextDouble();
+        System.out.print("Enter regular hours worked: ");
+        hoursWorked = scan.nextDouble();
+        System.out.print("Enter Over Time hours worked: ");
+        overtime = scan.nextDouble();
+        System.out.println();
+        System.out.print(dentalInsName + " monthly payment: ");
+        dentalSubscription = scan.nextDouble();
+        System.out.print(visionIsnName + " monthly payment: ");
+        visionSubscription = scan.nextDouble();
 //
 //        System.out.print("Are you currently insured with with Medical, dental, or vision? (y or yes): ");
 //        answer = scan.next();
@@ -48,11 +52,6 @@ public class Main
 //            visionSubscription = scan.nextDouble();
 //        }
         System.out.println();
-
-        System.out.print("Enter Hours worked: ");
-        hoursWorked = scan.nextInt();
-        System.out.print("Overtime hours worked: ");
-        overtime = scan.nextInt();
 
         Employee employee = new Employee(name,age,companyName, payRate,hoursWorked,
                 dentalSubscription,visionSubscription,dentalInsName,visionIsnName);
