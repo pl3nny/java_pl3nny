@@ -4,8 +4,10 @@ public class Employee extends People
 {
     private String companyName;
     private double hrPayRate;
+    private double benefitMedical;
     private double benefitDental;
     private double benefitVision;
+    private String medicalGroup;
     private String dentalGroup;
     private String visionGroup;
     private double hoursWorked;
@@ -15,13 +17,14 @@ public class Employee extends People
     private boolean workedOvertime = false;
 
     public Employee(String name, int age, String companyName, double hrPayRate,
-                    double hoursWorked, double benefitDental, double benefitVision,
-                    String dentalGroup, String visionGroup)
+                    int hoursWorked, int overtime, double benefitMedical, double benefitDental,
+                    double benefitVision, String medicalGroup, String dentalGroup, String visionGroup)
     {
         super(name, age);
         this.companyName = companyName;
         this.hrPayRate = hrPayRate;
         this.hoursWorked = hoursWorked;
+        this.overTimeHours = overtime;
         this.benefitDental = benefitDental;
         this.benefitVision = benefitVision;
         this.dentalGroup = dentalGroup;
@@ -73,6 +76,32 @@ public class Employee extends People
         this.overTimeHours = overTimeHours;
     }
 
+    public double getBenefitMedical() {
+        return benefitMedical;
+    }
+
+    public void setBenefitMedical(double benefitMedical) {
+        this.benefitMedical = benefitMedical;
+    }
+
+    public String getMedicalGroup() {
+        return medicalGroup;
+    }
+
+    public void setMedicalGroup(String medicalGroup) {
+        this.medicalGroup = medicalGroup;
+    }
+
+    public double getTotalBenefits()
+    {
+        return roundAmount(benefitMedical + benefitDental + benefitVision);
+    }
+
+    public double roundAmount(double amount)
+    {
+        return (double)Math.round(amount * 100.0) / 100.0;
+    }
+
     public boolean isWorkedOvertime()
     {
         if(overTimeHours > 0)
@@ -85,8 +114,25 @@ public class Employee extends People
 
     public double yearlyIncome()
     {
-        yearlyIncome = ((hrPayRate * hoursWorked) / 2 ) * 52;
+        yearlyIncome = (hrPayRate * 40 ) * 52;
 
         return (double)Math.round(yearlyIncome);
+    }
+
+    public void printBenefits()
+    {
+        System.out.println("Medical: " + medicalGroup + " $" + benefitMedical);
+        System.out.println("Dental: " + dentalGroup + " $" + benefitDental);
+        System.out.println("Vision: " + visionGroup + " $" + benefitVision);
+        System.out.println("Benefit deductions: $" + (roundAmount(benefitMedical + benefitVision
+                + benefitDental)));
+    }
+
+    public void printEmployeeInfo()
+    {
+        System.out.println("Company Name: " + companyName);
+        System.out.println("Employee: " + getName());
+        System.out.println("Pay Rate: $" + hrPayRate);
+        System.out.println("Yearly income before Taxes: $" + yearlyIncome());
     }
 }

@@ -1,8 +1,7 @@
 package com.pl3nny.PayCheckEstimation;
 
-public class PayCheck
+public class PayCheck extends Employee
 {
-    private Employee employee;
     private CaliforniaTax californiaTax;
     private FederalTax federalTax;
     private double beforeTax;
@@ -11,14 +10,17 @@ public class PayCheck
     private double OTtaxedAmount;
     private double benefitsDeductions;
     private double overtimePay;
+    private double payCheckAfterTaxesAndDeduction;
 
-    public PayCheck(Employee employee, CaliforniaTax californiaTax, FederalTax federalTax)
+
+    public PayCheck(String name, int age, String companyName, double hrPayRate, int hoursWorked, int overtime,
+                    double benefitMedical, double benefitDental, double benefitVision, String medicalGroup,
+                    String dentalGroup, String visionGroup)
     {
-        this.employee = employee;
-        this.californiaTax = californiaTax;
-        this.federalTax = federalTax;
-        this.overtimePay = 0;
-        this.OTtaxedAmount = 0;
+        super(name, age, companyName, hrPayRate, hoursWorked, overtime, benefitMedical, benefitDental, benefitVision,
+                medicalGroup, dentalGroup, visionGroup);
+        federalTax = new FederalTax();
+        californiaTax = new CaliforniaTax();
     }
 
     private double sumOfTax()
@@ -29,8 +31,8 @@ public class PayCheck
 
     private double sumOfOTtax()
     {
-        return sumOfTax() - californiaTax.getCaWithholding() - federalTax.getFedWithholding() + federalTax.getOTfedWithholding()
-                + californiaTax.getOTcaWithholding();
+        return sumOfTax() - californiaTax.getCaWithholding() - federalTax.getFedWithholding()
+                + federalTax.getOTfedWithholding() + californiaTax.getOTcaWithholding();
     }
 
     public double taxedAmount()
@@ -41,13 +43,13 @@ public class PayCheck
 
     public double benefitsDeductinos()
     {
-        this.benefitsDeductions = employee.getBenefitDental() + employee.getBenefitVision();
+        this.benefitsDeductions = getBenefitDental() + getBenefitVision();
         return roundAmount(this.benefitsDeductions);
     }
 
     public double checkBeforeTaxes()
     {
-        beforeTax = employee.getHrPayRate() * employee.getHoursWorked() + getOvertimePay();
+        beforeTax = getHrPayRate() * getHoursWorked() + getOvertimePay();
 
         return roundAmount(beforeTax);
     }
@@ -66,9 +68,9 @@ public class PayCheck
 
     public double getOvertimePay()
     {
-        if(employee.isWorkedOvertime())
+        if(isWorkedOvertime())
         {
-            overtimePay = employee.getHrPayRate() * 1.5 * employee.getOverTimeHours();
+            overtimePay = getHrPayRate() * 1.5 * getOverTimeHours();
             return roundAmount(overtimePay);
         }else
         {
@@ -81,5 +83,35 @@ public class PayCheck
         OTtaxedAmount = getOvertimePay() * sumOfOTtax();
 
         return roundAmount(OTtaxedAmount);
+    }
+
+    public double getPaycheckAfterTaxesAndDeductions()
+    {
+        payCheckAfterTaxesAndDeduction = checkAfterTaxes() - benefitsDeductinos();
+        return payCheckAfterTaxesAndDeduction;
+    }
+
+    public CaliforniaTax getCaliforniaTax() {
+        return californiaTax;
+    }
+
+    public FederalTax getFederalTax() {
+        return federalTax;
+    }
+
+    public void printCheckInfo()
+    {
+        System.out.println("Check Before Taxes: $" + checkBeforeTaxes());
+        System.out.println("Taxed amount: $" + taxedAmount());
+
+        if(isWorkedOvertime())
+        {
+            System.out.println("Overtime Pay: $" + getOvertimePay());
+            System.out.println("Overtime Taxed amount: $" + getOTtaxedAmount());
+        }
+        System.out.println();
+        System.out.println("Check After Taxes: $" + checkAfterTaxes());
+        System.out.println("Check After Taxes and Benefit Deductions: $" + getPaycheckAfterTaxesAndDeductions());
+        System.out.println();
     }
 }
