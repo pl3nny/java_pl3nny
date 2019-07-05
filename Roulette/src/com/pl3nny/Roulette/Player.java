@@ -2,20 +2,25 @@ package com.pl3nny.Roulette;
 
 public class Player
 {
-    private int cash;
+    private double cash;
 
-    public Player(int cash)
+    public Player (double cash)
     {
         this.cash = cash;
     }
 
-    public int getCash()
-    {
-        return cash;
-    }
-
-    public void setCash(int cash)
+    public void setCash(double cash)
     {
         this.cash = cash;
+    }
+
+    public double getCash()
+    {
+        return this.cash;
+    }
+
+    public void addCash(double cash)
+    {
+        this.cash += cash;
     }
 }

@@ -2,99 +2,30 @@ package com.pl3nny.Roulette;
 
 import java.util.Arrays;
 
-public class Roulette extends Game
+public class Roulette
 {
-    private int houseChips;
-    private String color;
-    private int betNumber;
+    private int singleZeroWheel[] = {0,32,15,19,4,21,2,25,17,34,6,27,13,36,11,
+            30,8,23,10,5,24,16,33,1,20,14,31,9,22,18,29,7,28,12,35,3,26};
+    private int doubleZeroWheel[] = {0,28,9,26,30,11,7,20,32,17,5,22,34,15,3,24,
+            36,13,1,00,27,10,25,29,12,8,19,31,18,6,21,33,16,4,23,35,14,2};
 
-
-    public Roulette(int numOfPlayers, int houseChips)
+    public int[] getSingleZeroWheel()
     {
-        super(numOfPlayers);
-        this.houseChips = houseChips;
-
-        generateSetNumberOfPlayers();
+        return singleZeroWheel;
     }
 
-    public int getPlayerCash(int playerNum)
+    public int[] getDoubleZeroWheel()
     {
-        if(getPlayers()[playerNum].isVip())
-        {
-            return getPlayers()[playerNum].getVipPlayer().getCash();
-        }
-        else
-        {
-            return getPlayers()[playerNum].getPlayer().getCash();
-        }
+        return doubleZeroWheel;
     }
 
-    public int getVipPlayerID(int playerNum)
+    public void printSingleZeroWheel()
     {
-        if(getPlayers()[playerNum].isVip())
-        {
-            return getPlayers()[playerNum].getVipPlayer().getId();
-        }
-        else
-        {
-            System.out.println("This player is not a VIP player...");
-            return 0;
-        }
+        System.out.println(Arrays.toString(singleZeroWheel));
     }
 
-    public String getVipPlayerName(int playerNum)
+    public void printDoubleZeroWheel()
     {
-        if(getPlayers()[playerNum].isVip())
-        {
-            return getPlayers()[playerNum].getVipPlayer().getName();
-        }
-        else
-        {
-            System.out.println("This player is not a VIP player...");
-            return null;
-        }
-    }
-
-    public String getPlayerInfo(int playerNum)
-    {
-        if(getPlayers()[playerNum].isVip())
-        {
-            return ("ID: " + getVipPlayerID(playerNum) + " Name: "
-                    + getVipPlayerName(playerNum)
-                    + " Cash: $" + getPlayerCash(playerNum));
-        }
-        else
-        {
-            return ("Player " + (playerNum + 1) + " Cash: $" + getPlayerCash(playerNum));
-        }
-    }
-
-    public void spinWheel()
-    {
-
-    }
-
-    public int getHouseChips() {
-        return houseChips;
-    }
-
-    public void setHouseChips(int houseChips) {
-        this.houseChips = houseChips;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getBetNumber() {
-        return betNumber;
-    }
-
-    public void setBetNumber(int betNumber) {
-        this.betNumber = betNumber;
+        System.out.println(Arrays.toString(doubleZeroWheel));
     }
 }

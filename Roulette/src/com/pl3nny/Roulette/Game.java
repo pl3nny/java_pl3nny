@@ -2,27 +2,28 @@ package com.pl3nny.Roulette;
 
 public class Game
 {
-    private int numOfPlayers;
-    private Players[] players;
+    private Roulette roulette;
+    private Player[] player;
+    private boolean isVip = false;
 
     public Game(int numOfPlayers)
     {
-        this.numOfPlayers = numOfPlayers;
+        player = new Player[numOfPlayers];
+        roulette = new Roulette();
     }
 
-    public void generateSetNumberOfPlayers()
+    public void createRegPlayer(double cash, int index)
     {
-        players = new Players[numOfPlayers];
+        player[index] = new Player(cash);
     }
 
-    public int getNumOfPlayers()
+    public void createVipPlayer(double cash, int id, String name, int index)
     {
-        return numOfPlayers;
+        player[index] = new VipPlayer(cash, id, name);
     }
 
-    public Players[] getPlayers()
+    public Roulette getRoulette()
     {
-        return players;
+        return roulette;
     }
-
 }
