@@ -27,6 +27,7 @@ public class Roulette
     public void printSingleZeroWheel()
     {
         System.out.println(Arrays.toString(singleZeroWheel));
+        System.out.println();
     }
 
     public int generateRandomNumber(int length)
@@ -39,6 +40,7 @@ public class Roulette
     public void printDoubleZeroWheel()
     {
         System.out.println(Arrays.toString(doubleZeroWheel));
+        System.out.println();
     }
 
     public void spinWheel()

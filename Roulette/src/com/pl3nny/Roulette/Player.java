@@ -26,17 +26,17 @@ public class Player
         this.cash += cash;
     }
 
-    private void setColor(String color)
+    public void setColor(String color)
     {
         this.color = color;
     }
 
-    private String getColor()
+    public String getColor()
     {
         return color;
     }
 
-    private void setPlayersNumGuess(int playersNumGuess)
+    public void setPlayersNumGuess(int playersNumGuess)
     {
         this.playersNumGuess = playersNumGuess;
     }

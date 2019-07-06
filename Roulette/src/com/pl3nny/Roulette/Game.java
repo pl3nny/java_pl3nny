@@ -73,9 +73,43 @@ public class Game
         }
     }
 
-    public void placeNumberBet(int number)
+    public void placeNumberBet()
     {
+        for (int i = 0; i < numOfPlayers; i++)
+        {
+            player[i].playerInfo(i);
+            System.out.print("Enter number to place bet: ");
+            player[i].setPlayersNumGuess(scan.nextInt());
+            System.out.println();
+        }
+    }
 
+    public void gameResults()
+    {
+        roulette.spinWheel();
+
+        for(int i = 0; i < numOfPlayers; i++)
+        {
+            player[i].playerInfo(i);
+            if(player[i].getPlayersNumGuess() == roulette.getBall())
+            {
+                System.out.println("Bet placed on : " + player[i].getPlayersNumGuess() +
+                        "\tRoulette ball : " + roulette.getBall());
+
+                System.out.println();
+                System.out.println("Roulette ball landed on your number.");
+                System.out.println("You won! ");
+            }
+            else
+            {
+                System.out.println("Bet placed on : " + player[i].getPlayersNumGuess() +
+                        "\tRoulette ball : " + roulette.getBall());
+
+                System.out.println();
+                System.out.println("Roulette ball did not land on your number...");
+            }
+            System.out.println();
+        }
     }
 
 }

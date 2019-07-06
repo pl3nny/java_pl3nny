@@ -27,13 +27,19 @@ public class Main
         {
             case 1:
                 System.out.println("\n\tSingle Zero Wheel Roulette\n");
+                game.getRoulette().setSingleWheel(true);
                 game.setUpPlayers();
-                game.getPlayersInfo();
+                game.getRoulette().printSingleZeroWheel();
+                game.placeNumberBet();
+                game.gameResults();
                 break;
             case 2:
+                game.getRoulette().setDoubleWheel(true);
                 System.out.println("\n\tDouble Zero Wheel Roulette\n");
                 game.setUpPlayers();
-                game.getPlayersInfo();
+                game.getRoulette().printDoubleZeroWheel();
+                game.placeNumberBet();
+                game.gameResults();
                 break;
         }
     }

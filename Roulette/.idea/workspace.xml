@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbaa54b2-12a3-4401-8ce9-60adf1d09200" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Roulette.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/Roulette.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/VipPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Roulette/com/pl3nny/Roulette/VipPlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pl3nny/Roulette/VipPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pl3nny/Roulette/VipPlayer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +18,26 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="DockManager">
+    <window id="10">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="600">
+                    <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
     <window id="8">
       <content type="file-editors">
         <state>
@@ -41,38 +55,6 @@
         </state>
       </content>
     </window>
-    <window id="10">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="680">
-                    <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#599#600#0" expanded="true" />
-                      <element signature="e#667#668#0" expanded="true" />
-                      <element signature="e#1109#1110#0" expanded="true" />
-                      <element signature="e#1136#1137#0" expanded="true" />
-                      <element signature="e#1327#1328#0" expanded="true" />
-                      <element signature="e#1361#1362#0" expanded="true" />
-                      <element signature="e#1416#1417#0" expanded="true" />
-                      <element signature="e#1462#1463#0" expanded="true" />
-                      <element signature="e#1500#1501#0" expanded="true" />
-                      <element signature="e#1534#1535#0" expanded="true" />
-                      <element signature="e#1589#1590#0" expanded="true" />
-                      <element signature="e#1635#1636#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
     <window id="7">
       <content type="file-editors">
         <state>
@@ -80,20 +62,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Player.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="460">
-                    <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-                    <folding>
-                      <element signature="e#476#477#0" expanded="true" />
-                      <element signature="e#509#510#0" expanded="true" />
-                      <element signature="e#551#552#0" expanded="true" />
-                      <element signature="e#579#580#0" expanded="true" />
-                      <element signature="e#647#648#0" expanded="true" />
-                      <element signature="e#701#702#0" expanded="true" />
-                      <element signature="e#748#749#0" expanded="true" />
-                      <element signature="e#786#787#0" expanded="true" />
-                      <element signature="e#812#813#0" expanded="true" />
-                      <element signature="e#848#849#0" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="520">
+                    <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
                   </state>
                 </provider>
               </entry>
@@ -109,14 +79,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="739">
-                    <caret line="77" selection-start-line="77" selection-end-line="77" />
-                    <folding>
-                      <element signature="e#331#332#0" expanded="true" />
-                      <element signature="e#379#380#0" expanded="true" />
-                      <element signature="e#565#566#0" expanded="true" />
-                      <element signature="e#596#597#0" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="639">
+                    <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
                   </state>
                 </provider>
               </entry>
@@ -131,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="500">
+              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -154,9 +118,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Players.java" />
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Vip.java" />
-        <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java" />
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/VipPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java" />
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Main.java" />
         <option value="$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java" />
       </list>
@@ -171,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="356" />
-    <option name="y" value="102" />
+    <option name="x" value="261" />
+    <option name="y" value="140" />
     <option name="width" value="1320" />
     <option name="height" value="848" />
   </component>
@@ -269,17 +233,18 @@
       <workItem from="1561958488888" duration="1825000" />
       <workItem from="1562283749749" duration="6152000" />
       <workItem from="1562375905479" duration="11879000" />
+      <workItem from="1562391580001" duration="1725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31942000" />
+    <option name="totallyTimeSpent" value="33667000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="356" y="102" width="1320" height="848" extended-state="0" />
+    <frame x="261" y="140" width="1320" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17698413" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17936508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -347,30 +312,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Players.java" />
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Vip.java" />
+    <entry file="file://$PROJECT_DIR$/2014-06-05.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Roulette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state relative-caret-position="600">
+          <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1589#1590#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2014-06-05.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/VipPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -381,40 +341,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="520">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pl3nny/Roulette/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        <state relative-caret-position="500">
+          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
         </state>
       </provider>
     </entry>
