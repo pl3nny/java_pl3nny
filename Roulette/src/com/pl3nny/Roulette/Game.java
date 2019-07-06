@@ -84,9 +84,17 @@ public class Game
         }
     }
 
+    public void placeColorBet()
+    {
+
+    }
+
     public void gameResults()
     {
         roulette.spinWheel();
+
+        System.out.println("\t\tRoulette Wheel\n" +
+                "\n\tBall: " + roulette.getBall() + "\t\tColor: " + roulette.getColor() + "\n");
 
         for(int i = 0; i < numOfPlayers; i++)
         {
