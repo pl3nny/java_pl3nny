@@ -3,6 +3,8 @@ package com.pl3nny.Roulette;
 public class Player
 {
     private double cash;
+    private String color;
+    private int playersNumGuess;
 
     public Player (double cash)
     {
@@ -22,5 +24,30 @@ public class Player
     public void addCash(double cash)
     {
         this.cash += cash;
+    }
+
+    private void setColor(String color)
+    {
+        this.color = color;
+    }
+
+    private String getColor()
+    {
+        return color;
+    }
+
+    private void setPlayersNumGuess(int playersNumGuess)
+    {
+        this.playersNumGuess = playersNumGuess;
+    }
+
+    public int getPlayersNumGuess()
+    {
+        return playersNumGuess;
+    }
+
+    public void playerInfo(int playerNum)
+    {
+        System.out.println("Player " + (playerNum + 1) + " Cash: $" + cash);
     }
 }

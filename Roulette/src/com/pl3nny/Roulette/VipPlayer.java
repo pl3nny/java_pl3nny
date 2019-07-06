@@ -21,4 +21,10 @@ public class VipPlayer extends Player
     {
         return name;
     }
+
+    @Override
+    public void playerInfo(int playerNum)
+    {
+        System.out.println("Name: " +name + " ID: " + id + " Cash: $" + getCash());
+    }
 }
