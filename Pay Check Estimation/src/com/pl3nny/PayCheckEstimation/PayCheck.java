@@ -11,13 +11,14 @@ public class PayCheck extends Employee
     private double benefitsDeductions;
     private double overtimePay;
     private double payCheckAfterTaxesAndDeduction;
+    private double bonusTaxedAmount;
 
 
     public PayCheck(String name, int age, String companyName, double hrPayRate, int hoursWorked, int overtime,
-                    double benefitMedical, double benefitDental, double benefitVision, String medicalGroup,
+                    double bonus, double benefitMedical, double benefitDental, double benefitVision, String medicalGroup,
                     String dentalGroup, String visionGroup)
     {
-        super(name, age, companyName, hrPayRate, hoursWorked, overtime, benefitMedical, benefitDental, benefitVision,
+        super(name, age, companyName, hrPayRate, hoursWorked, overtime, bonus, benefitMedical, benefitDental, benefitVision,
                 medicalGroup, dentalGroup, visionGroup);
         federalTax = new FederalTax();
         californiaTax = new CaliforniaTax();
@@ -49,14 +50,14 @@ public class PayCheck extends Employee
 
     public double checkBeforeTaxes()
     {
-        beforeTax = getHrPayRate() * getHoursWorked() + getOvertimePay();
+        beforeTax = (getHrPayRate() * getHoursWorked()) + getOvertimePay() + getBonus();
 
         return roundAmount(beforeTax);
     }
 
     public double checkAfterTaxes()
     {
-        afterTax = beforeTax - (taxedAmount + OTtaxedAmount);
+        afterTax = beforeTax - (taxedAmount + OTtaxedAmount + bonusTaxedAmount);
 
         return roundAmount(afterTax);
     }
@@ -85,10 +86,16 @@ public class PayCheck extends Employee
         return roundAmount(OTtaxedAmount);
     }
 
+    public double getBonusTaxedAmount()
+    {
+        bonusTaxedAmount = getBonus() * sumOfTax();
+        return roundAmount(bonusTaxedAmount);
+    }
+
     public double getPaycheckAfterTaxesAndDeductions()
     {
         payCheckAfterTaxesAndDeduction = checkAfterTaxes() - benefitsDeductinos();
-        return payCheckAfterTaxesAndDeduction;
+        return roundAmount(payCheckAfterTaxesAndDeduction);
     }
 
     public CaliforniaTax getCaliforniaTax() {
@@ -109,6 +116,8 @@ public class PayCheck extends Employee
             System.out.println("Overtime Pay: $" + getOvertimePay());
             System.out.println("Overtime Taxed amount: $" + getOTtaxedAmount());
         }
+        System.out.println("Bonus: $" + getBonus());
+        System.out.println("Bonus taxed amount: $" + getBonusTaxedAmount());
         System.out.println();
         System.out.println("Check After Taxes: $" + checkAfterTaxes());
         System.out.println("Check After Taxes and Benefit Deductions: $" + getPaycheckAfterTaxesAndDeductions());

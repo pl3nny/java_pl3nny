@@ -13,11 +13,12 @@ public class Employee extends People
     private double hoursWorked;
     private double overTimeHours;
     private double yearlyIncome;
+    private double bonus;
 
     private boolean workedOvertime = false;
 
     public Employee(String name, int age, String companyName, double hrPayRate,
-                    int hoursWorked, int overtime, double benefitMedical, double benefitDental,
+                    int hoursWorked, int overtime, double bonus, double benefitMedical, double benefitDental,
                     double benefitVision, String medicalGroup, String dentalGroup, String visionGroup)
     {
         super(name, age);
@@ -29,6 +30,7 @@ public class Employee extends People
         this.benefitVision = benefitVision;
         this.dentalGroup = dentalGroup;
         this.visionGroup = visionGroup;
+        this.bonus = bonus;
     }
 
     public String getCompanyName()
@@ -100,6 +102,14 @@ public class Employee extends People
     public double roundAmount(double amount)
     {
         return (double)Math.round(amount * 100.0) / 100.0;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
     }
 
     public boolean isWorkedOvertime()
