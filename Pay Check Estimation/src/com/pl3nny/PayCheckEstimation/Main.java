@@ -12,7 +12,7 @@ public class Main
         System.out.println("\tPay Check Estimation\n");
 
         int age, hoursWorked, overtime;
-        double payRate, dentalSubscription = 0, visionSubscription = 0, medicalSubscription = 0;
+        double payRate, dentalSubscription = 0, visionSubscription = 0, medicalSubscription = 0, bonus;
         String name = "name", companyName="employer", medicalInsName = "medical",dentalInsName = "dental", visionIsnName = "vision", answer;
 
         System.out.print("Employee Name: ");
@@ -27,6 +27,9 @@ public class Main
         hoursWorked = scan.nextInt();
         System.out.print("Enter Over Time hours worked: ");
         overtime = scan.nextInt();
+        System.out.print("Enter bonus amount: $");
+        bonus = scan.nextDouble();
+
         System.out.println();
         System.out.print(dentalInsName + " monthly payment: ");
         dentalSubscription = scan.nextDouble();
@@ -34,7 +37,7 @@ public class Main
         visionSubscription = scan.nextDouble();
         System.out.println();
 
-        PayCheck payCheck = new PayCheck(name, age, companyName, payRate, hoursWorked, overtime,
+        PayCheck payCheck = new PayCheck(name, age, companyName, payRate, hoursWorked, overtime, bonus,
                 medicalSubscription, dentalSubscription, visionSubscription, medicalInsName, dentalInsName,
                 visionIsnName);
 
