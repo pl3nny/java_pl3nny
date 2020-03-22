@@ -10,10 +10,10 @@ public class FederalTax
 
     public FederalTax()
     {
-        this.fedWithholding = 10.68 / 100;
+        this.fedWithholding = 11.57 / 100;
         this.socialSecurity = 6.19 / 100;
         this.medicare = 1.45 / 100;
-        this.OTfedWithholding = 22 / 100;
+        this.OTfedWithholding = (2 * this.fedWithholding);
     }
 
     public double getFedWithholding()

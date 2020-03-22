@@ -32,13 +32,12 @@ public class PayCheck extends Employee
 
     private double sumOfOTtax()
     {
-        return sumOfTax() - californiaTax.getCaWithholding() - federalTax.getFedWithholding()
-                + federalTax.getOTfedWithholding() + californiaTax.getOTcaWithholding();
+        return federalTax.getOTfedWithholding() + californiaTax.getOTcaWithholding();
     }
 
     public double taxedAmount()
     {
-        taxedAmount = checkBeforeTaxes() * sumOfTax();
+        taxedAmount = ((checkBeforeTaxes() - (getBonus() + getOvertimePay())) * sumOfTax()) + (getBonusTaxedAmount() + getOTtaxedAmount());
         return roundAmount(taxedAmount);
     }
 
@@ -46,20 +45,6 @@ public class PayCheck extends Employee
     {
         this.benefitsDeductions = getBenefitDental() + getBenefitVision();
         return roundAmount(this.benefitsDeductions);
-    }
-
-    public double checkBeforeTaxes()
-    {
-        beforeTax = (getHrPayRate() * getHoursWorked()) + getOvertimePay() + getBonus();
-
-        return roundAmount(beforeTax);
-    }
-
-    public double checkAfterTaxes()
-    {
-        afterTax = beforeTax - (taxedAmount + OTtaxedAmount + bonusTaxedAmount);
-
-        return roundAmount(afterTax);
     }
 
     public double roundAmount(double amount)
@@ -88,7 +73,7 @@ public class PayCheck extends Employee
 
     public double getBonusTaxedAmount()
     {
-        bonusTaxedAmount = getBonus() * sumOfTax();
+        bonusTaxedAmount = getBonus() * sumOfOTtax();
         return roundAmount(bonusTaxedAmount);
     }
 
@@ -104,6 +89,20 @@ public class PayCheck extends Employee
 
     public FederalTax getFederalTax() {
         return federalTax;
+    }
+
+    public double checkBeforeTaxes()
+    {
+        beforeTax = (getHrPayRate() * getHoursWorked()) + getOvertimePay() + getBonus();
+
+        return roundAmount(beforeTax);
+    }
+
+    public double checkAfterTaxes()
+    {
+        afterTax = beforeTax - taxedAmount();
+
+        return roundAmount(afterTax);
     }
 
     public void printCheckInfo()

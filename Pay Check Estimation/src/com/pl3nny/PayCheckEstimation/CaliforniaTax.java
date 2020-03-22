@@ -8,9 +8,9 @@ public class CaliforniaTax
 
     public CaliforniaTax()
     {
-        this.caWithholding = 3.81 / 100;
+        this.caWithholding = 4.2 / 100;
         this.stateDisabilityTax = 1.00 / 100;
-        this.OTcaWithholding = 9.00 / 100;
+        this.OTcaWithholding = (2 * this.caWithholding);
     }
 
     public double getStateDisabilityTax()
