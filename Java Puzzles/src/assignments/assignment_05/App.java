@@ -18,23 +18,23 @@ public class App {
 	 */
 	public static boolean isOrdered(int first, int second, int third, boolean itsOk) {
 		
-		return true;
+		if(itsOk){
+			if(third > second)
+				return true;
+			else
+				return false;
+		}
+		else {
+			if(second > first && third > second)
+				return true;
+			else
+				return false;
+		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
-	public static void main(String args[]){
+
+	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW
+	// --------------------//
+	public static void main(String args[]) {
 		TestingUtils05.runTests();
 	}
 }
-
-

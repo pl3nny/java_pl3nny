@@ -21,10 +21,17 @@ public class App {
 		fizzyWizzy(3) <b>---></b> "Fizz!" <br>
 	 */
 	public static String fizzyWizzy(int n) {
-		    
-		    return n + "!";
-		    
+		    if(n % 5 == 0 && n % 3 == 0) {
+				return "FizzBuzz!";
+			}
+			else if(n % 3 == 0 && n % 5 != 0){
+				return "Fizz!";
+			}
+			else if(n % 5 == 0 && n % 3 != 0){
+				return "Buzz!";
+			}
 
+			return n + "!";
 		}
 
 	
