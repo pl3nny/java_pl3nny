@@ -4,7 +4,6 @@ import assignments.ignore.TestingUtils02;
 
 public class App {
 
-	
 	/**
 	 * You are driving a little too fast, and a police officer stops you. 
 	 * Write code to compute the fine you would have to pay. 
@@ -21,23 +20,28 @@ public class App {
 	 */
 		public static int speedingFine(int speed, boolean isHoliday) {
 			
+			int addSpeedLimit = 0;
+			
+			if(isHoliday){
+				addSpeedLimit = 5;
+			}
+
+			if(speed <= 60){
+				return 0;
+			} else if (speed > 60 + addSpeedLimit && speed <= 80 + addSpeedLimit){
+				return 100;
+			} else if(speed > 80 + addSpeedLimit){
+				return 200;
+			}
+
 			return 0;
 
 		}
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
-		public static void main(String args[]){
-			TestingUtils02.runTests();
-		}
-			
+
+	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW
+	// --------------------//
+	public static void main(String args[]) {
+		TestingUtils02.runTests();
+	}
 
 }
