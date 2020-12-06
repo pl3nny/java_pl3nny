@@ -17,14 +17,22 @@ public class App {
 	 */
 
 	public static String repeatChar(String str) {
-		return str;
 
+		String tempString = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			tempString += str.charAt(i);
+			tempString += str.charAt(i);
+		}
+
+		str = tempString;
+
+		return str;
 	}
 
 	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW
 	// --------------------//
 	public static void main(String args[]) {
 		TestingUtils11.runTests();
-
 	}
 }
