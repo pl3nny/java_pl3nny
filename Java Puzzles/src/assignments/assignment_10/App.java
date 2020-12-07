@@ -19,21 +19,14 @@ public class App {
 	 */
 
 	public static int partialSum(int a, int b, int c) {
+		if(a == 13)
+			return 0;
+		if(b == 13)
+			return a;
+		if(c == 13)
+			return a + b;
 
-		int[] arr = new int[3];
-		arr[0] = a;
-		arr[1] = b;
-		arr[2] = c;
-		int sum = 0;
-
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] == 13) {
-				break;
-			}
-			sum += arr[i];
-		}
-
-		return sum;
+		return a + b + c;
 	}
 
 	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW

@@ -19,17 +19,21 @@ public class App {
 
 	public static String starKill(String str) {
 
-		String temp = "";
+		String result = "";
 
-		for (int i = 0; i < str.length(); i++) {
-			
+		for(int i = 0; i < str.length(); i++){
+			if(i == 0 && str.charAt(i) != '*'){
+				result += str.charAt(i);
+			}
+			if(i > 0 && str.charAt(i) != '*' && str.charAt(i - 1) != '*'){
+				result += str.charAt(i);
+			}
+			if( i > 0 && str.charAt(i) == '*' && str.charAt(i - 1) != '*')
+				result = result.substring(0, result.length() - 1);
 
-			temp += str.charAt(i);
 		}
 
-		str = temp;
-
-		return str;
+		return result;
 	}
 
 	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW

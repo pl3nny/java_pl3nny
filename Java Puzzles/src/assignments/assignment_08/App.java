@@ -20,19 +20,16 @@ public class App {
 
 	public static int sumUnique(int a, int b, int c) {
 
-		if(a == b && b != c){
+		if(a == b && b == c)
+			return 0;
+		if(a == b)
 			return c;
-		}
-		else if (a != b && b == c){
-			return a;
-		}
-		else if(a != b && a == c) {
+		if(a == c)
 			return b;
-		}
-		else if(a != b && b != c && a != c){
-			return a + b + c;
-		}
-		return 0;
+		if(b == c)
+			return a;
+
+		return a + b + c;
 	}
 
 	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW

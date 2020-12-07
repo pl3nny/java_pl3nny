@@ -19,27 +19,17 @@ public class App {
 
 	public static int nearestTwentyOne(int a, int b) {
 
-		if (a > 21 && b > 21) {
+		if(a > 21 && b > 21)
 			return 0;
-		}
-		if ((a <= 21 && b > 21) || (a > 21 && b <= 21)) {
-			if (a > 21 || b > 21) {
-				int smallest = a;
-				if (b < a) {
-					smallest = b;
-				}
-				return smallest;
-			}
-		} else {
-			int largest = a;
-			if (b > a) {
-				largest = b;
-			}
+		if(a > 21 && b <= 21)
+			return b;
+		if(a <= 21 && b > 21)
+			return a;
 
-			return largest;
-		}
-
-		return 0;
+		if(a > b)
+			return a;
+		else
+			return b;
 	}
 
 	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW

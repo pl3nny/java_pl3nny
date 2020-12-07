@@ -4,35 +4,28 @@ import assignments.ignore.TestingUtils13;
 
 public class App {
 
-
 	/**
 	 * 
-	Given an array of strings, return the count of the number of strings with the given length	<br>
-	<br>
-
+	 * Given an array of strings, return the count of the number of strings with the
+	 * given length <br>
+	 * <br>
+	 * 
 	 * <b>EXPECTATIONS:</b><br>
-		wordsCount({"a", "bb", "b", "ccc"}, 1) <b>---></b> 2<br>
-		wordsCount({"a", "bb", "b", "ccc"}, 3) <b>---></b> 1 <br>
-		wordsCount({"a", "bb", "b", "ccc"}, 4) <b>---></b> 0 <br>
+	 * wordsCount({"a", "bb", "b", "ccc"}, 1) <b>---></b> 2<br>
+	 * wordsCount({"a", "bb", "b", "ccc"}, 3) <b>---></b> 1 <br>
+	 * wordsCount({"a", "bb", "b", "ccc"}, 4) <b>---></b> 0 <br>
 	 */
-	
+
 	public static int wordsCount(String[] words, int len) {
+		
+
 		return 0;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	//----------------------STARTING POINT OF PROGRAM. IGNORE BELOW --------------------//
-	public static void main(String args[]){
+	// ----------------------STARTING POINT OF PROGRAM. IGNORE BELOW
+	// --------------------//
+	public static void main(String args[]) {
 		TestingUtils13.runTests();
-		
+
 	}
 }
