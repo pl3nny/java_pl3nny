@@ -27,6 +27,7 @@ public class App {
 
 			for (int i = 1; i < str.length(); i++) {
 				
+				// streak is over if this coditional is not met
 				if(str.charAt(i - 1) == str.charAt(i)){
 					count++;
 				}
