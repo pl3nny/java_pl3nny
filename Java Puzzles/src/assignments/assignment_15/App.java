@@ -20,7 +20,28 @@ public class App {
 
 	public static int longestStreak(String str) {
 
-		
+		if (str.length() > 0) {
+
+			int count = 1;
+			int longest = 0;
+
+			for (int i = 1; i < str.length(); i++) {
+				
+				if(str.charAt(i - 1) == str.charAt(i)){
+					count++;
+				}
+				else {
+					count = 1;
+				}
+
+				if(count > longest){
+					longest = count;
+				}
+			}
+
+			return longest;
+
+		}
 
 		return 0;
 	}
